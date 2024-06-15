@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Single item -->
+<div class="carousel-item active">
+    <div class="mask" style="background-image: url('{% static 'img/bgimage.jpg' %}');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; /* Set height to 100% of viewport height */">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+                <h1 class="mb-3">CRIMINAL IDENTIFICATION </h1>
+                <a class="btn btn-outline-light btn-lg m-2" href="log_in" role="button" rel="nofollow">Log In</a>
+                <a class="btn btn-outline-light btn-lg m-2" href="register" role="button">Register</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
